@@ -4,6 +4,7 @@ const File = require('../models/file');
 
 router.get('/:uuid' , async (req, res) => {
     try{
+        
     const file = await File.findOne({
         uuid: req.params.uuid
     });
